@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Login
+  form(action="/storejoke" method="POST")
+    = Username
+    input(type="text" name="userName")
+    input(type="submit" value="Login")
+  a(href='/') Go to front page
